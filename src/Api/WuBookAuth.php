@@ -46,7 +46,7 @@ class WuBookAuth
      * @param \Illuminate\Cache\Repository $cache
      * @param Client $client
      */
-    public function __construct(array $config, Illuminate\Cache\Repository $cache, Client $client)
+    public function __construct(array $config, $cache, Client $client)
     {
         $this->config = $config;
         $this->client = $client;

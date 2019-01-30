@@ -39,7 +39,7 @@ class WuBookManager
     /**
      * @var string
      */
-    const ENDPOINT = 'https://wubook.net/xrws/';
+    const ENDPOINT = 'https://wired.wubook.net/xrws/';
 
     /**
      * @var array
@@ -61,9 +61,8 @@ class WuBookManager
     {
         // Setup credentials
         $this->config = array_only($config->get('wubook'), ['username', 'password', 'provider_key', 'lcode']);
-
         // Credentials check
-        if (!array_key_exists('username', $this->config) || !array_key_exists('password', $this->config) || !array_key_exists('provider_key', $this->config) || !array_key_exists('lcode', $this->lcode)) {
+        if (!array_key_exists('username', $this->config) || !array_key_exists('password', $this->config) || !array_key_exists('provider_key', $this->config) || !array_key_exists('lcode', $this->config)) {
             throw new WuBookException('Credentials are required!');
         }
 
@@ -84,7 +83,6 @@ class WuBookManager
     {
         // Setup client
         $client = new Client(self::ENDPOINT, null, new NativeParser(), new NativeSerializer());
-
         return new WuBookAuth($this->config, $this->cache, $client);
     }
 
@@ -209,7 +207,6 @@ class WuBookManager
     {
         // Setup client
         $client = new Client(self::ENDPOINT, null, new NativeParser(), new NativeSerializer());
-
         return new WuBookRooms($this->config, $this->cache, $client, $token);
     }
 

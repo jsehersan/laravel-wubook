@@ -49,7 +49,7 @@ abstract class WuBookApi
      * @param Illuminate\Cache\Repository $cache
      * @param fXmlRpc\Client $client
      */
-    public function __construct($config, Repository $cache, Client $client)
+    public function __construct($config, $cache,  $client)
     {
         $this->config = $config;
         $this->cache = $cache;
@@ -72,7 +72,7 @@ abstract class WuBookApi
             ];
         }
 
-        $this->client->prependParams($token);
+        $this->client->prependParams($params);
     }
 
     /**

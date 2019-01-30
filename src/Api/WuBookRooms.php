@@ -32,7 +32,6 @@ class WuBookRooms extends WuBookApi
     public function __construct($config, $cache, $client, $token = null)
     {
         parent::__construct($config, $cache, $client);
-
         $this->token = $token;
     }
 
