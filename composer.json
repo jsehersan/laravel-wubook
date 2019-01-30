@@ -1,14 +1,14 @@
 {
-    "name": "ilgala/laravel-wubook",
+    "name": "jsehersan/laravel-wubook",
     "type": "library",
     "description": "A WuBook bridge for Laravel 5.x http://wubook.net",
     "keywords": [
-        "IlGala",
+        "jsehersan",
         "laravel-wubook",
         "laravel-package",
         "WuBook"
     ],
-    "homepage": "https://github.com/ilgala/laravel-wubook",
+    "homepage": "https://github.com/jsehersan/laravel-wubook",
     "license": "MIT",
     "authors": [
         {
