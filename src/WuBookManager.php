@@ -9,24 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace IlGala\LaravelWubook;
+namespace Jsehersan\LaravelWubook;
 
 use fXmlRpc\Client;
 use fXmlRpc\Parser\NativeParser;
 use fXmlRpc\Serializer\NativeSerializer;
 use Illuminate\Contracts\Config\Repository;
-use IlGala\LaravelWubook\Exceptions\WuBookException;
-use IlGala\LaravelWubook\Api\WuBookAuth;
-use IlGala\LaravelWubook\Api\WuBookAvailability;
-use IlGala\LaravelWubook\Api\WuBookCancellationPolicies;
-use IlGala\LaravelWubook\Api\WuBookChannelManager;
-use IlGala\LaravelWubook\Api\WuBookCorporate;
-use IlGala\LaravelWubook\Api\WuBookExtras;
-use IlGala\LaravelWubook\Api\WuBookPrices;
-use IlGala\LaravelWubook\Api\WuBookReservations;
-use IlGala\LaravelWubook\Api\WuBookRestrictions;
-use IlGala\LaravelWubook\Api\WuBookRooms;
-use IlGala\LaravelWubook\Api\WuBookTransactions;
+use Jsehersan\LaravelWubook\Exceptions\WuBookException;
+use Jsehersan\LaravelWubook\Api\WuBookAuth;
+use Jsehersan\LaravelWubook\Api\WuBookAvailability;
+use Jsehersan\LaravelWubook\Api\WuBookCancellationPolicies;
+use Jsehersan\LaravelWubook\Api\WuBookChannelManager;
+use Jsehersan\LaravelWubook\Api\WuBookCorporate;
+use Jsehersan\LaravelWubook\Api\WuBookExtras;
+use Jsehersan\LaravelWubook\Api\WuBookPrices;
+use Jsehersan\LaravelWubook\Api\WuBookReservations;
+use Jsehersan\LaravelWubook\Api\WuBookRestrictions;
+use Jsehersan\LaravelWubook\Api\WuBookRooms;
+use Jsehersan\LaravelWubook\Api\WuBookTransactions;
 
 /**
  * This is the WuBook manager class.
@@ -78,7 +78,7 @@ class WuBookManager
     /**
      * Auth API
      *
-     * @return IlGala\LaravelWubook\Api\WuBookAuth
+     * @return Jsehersan\LaravelWubook\Api\WuBookAuth
      */
     public function auth()
     {
@@ -92,7 +92,7 @@ class WuBookManager
      * Availability API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookAvailability
+     * @return Jsehersan\LaravelWubook\Api\WuBookAvailability
      */
     public function availability($token = null)
     {
@@ -106,7 +106,7 @@ class WuBookManager
      * Cancellation polices API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookCancellationPolicies
+     * @return Jsehersan\LaravelWubook\Api\WuBookCancellationPolicies
      */
     public function cancellation_policies($token = null)
     {
@@ -119,7 +119,7 @@ class WuBookManager
      * Channel manager API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookChannelManager
+     * @return Jsehersan\LaravelWubook\Api\WuBookChannelManager
      */
     public function channel_manager($token = null)
     {
@@ -133,7 +133,7 @@ class WuBookManager
      * Corporate function API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookCorporate
+     * @return Jsehersan\LaravelWubook\Api\WuBookCorporate
      */
     public function corporate_functions($token = null)
     {
@@ -147,7 +147,7 @@ class WuBookManager
      * Extra functions API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookExtras
+     * @return Jsehersan\LaravelWubook\Api\WuBookExtras
      */
     public function extras($token = null)
     {
@@ -161,7 +161,7 @@ class WuBookManager
      * Prices API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookPrices
+     * @return Jsehersan\LaravelWubook\Api\WuBookPrices
      */
     public function prices($token = null)
     {
@@ -175,7 +175,7 @@ class WuBookManager
      * Reservations API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookPrices
+     * @return Jsehersan\LaravelWubook\Api\WuBookPrices
      */
     public function reservations($token = null)
     {
@@ -189,7 +189,7 @@ class WuBookManager
      * Restrictions API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookRestrictions
+     * @return Jsehersan\LaravelWubook\Api\WuBookRestrictions
      */
     public function restrictions($token = null)
     {
@@ -203,7 +203,7 @@ class WuBookManager
      * Rooms API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookRooms
+     * @return Jsehersan\LaravelWubook\Api\WuBookRooms
      */
     public function rooms($token = null)
     {
@@ -217,7 +217,7 @@ class WuBookManager
      * Transactions API
      *
      * @param string $token
-     * @return IlGala\LaravelWubook\Api\WuBookTransactions
+     * @return Jsehersan\LaravelWubook\Api\WuBookTransactions
      */
     public function transactions($token = null)
     {

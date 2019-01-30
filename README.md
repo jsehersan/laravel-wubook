@@ -38,7 +38,7 @@ Once Laravel WuBook is installed, you need to register the service provider. Ope
  ```php
  'providers' => [
     // OTHER PROVIDERS
-    'IlGala\LaravelWubook\WuBookServiceProvider::class'
+    'Jsehersan\LaravelWubook\WuBookServiceProvider::class'
  ],
  ```
 
@@ -47,7 +47,7 @@ You can register the WuBook facade in the `aliases` key of your `config/app.php`
  ```php
  'aliases' => [
     // OTHER ALIASES
-    'WuBook' => IlGala\LaravelWubook\Facades\WuBook::class
+    'WuBook' => Jsehersan\LaravelWubook\Facades\WuBook::class
  ],
  ```
 
@@ -62,7 +62,7 @@ $ php artisan vendor:publish
 
 # OR
 
-$ php artisan vendor:publish --provider=IlGala\LaravelWubook\WuBookServiceProvider
+$ php artisan vendor:publish --provider=Jsehersan\LaravelWubook\WuBookServiceProvider
 ```
 
 This will create a `config/wubook.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
@@ -165,7 +165,7 @@ provider_info($token = null)
 Here you can see an example of just how simple this package is to use. Out of the box, the default `cache_token` parameter is set to false so:
 
 ```php
-use IlGala\LaravelWuBook\Facades\WuBook;
+use Jsehersan\LaravelWuBook\Facades\WuBook;
 // you can alias this in config/app.php if you like
 
 // Retrieve the token
@@ -195,7 +195,7 @@ WuBook::rooms()->fetch_rooms(1)                 // See http://tdocs.wubook.net/w
 If you prefer to use dependency injection over facades like me, then you can easily inject the manager like so:
 
 ```php
-use IlGala\LaravelWuBook\WuBookManager;
+use Jsehersan\LaravelWuBook\WuBookManager;
 use Illuminate\Support\Facades\App; // you probably have this aliased already
 
 class RoomManager

@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace IlGala\LaravelWubook\Api;
+namespace Jsehersan\LaravelWubook\Api;
 
-use IlGala\LaravelWubook\Api\WuBookAuth;
-use IlGala\LaravelWubook\Exceptions\WuBookException;
+use Jsehersan\LaravelWubook\Api\WuBookAuth;
+use Jsehersan\LaravelWubook\Exceptions\WuBookException;
 
 /**
  * This is the WuBook api abstract class.
@@ -38,7 +38,7 @@ abstract class WuBookApi
     protected $client;
 
     /**
-     * @var IlGala\LaravelWubook\Api\WuBookAuth
+     * @var Jsehersan\LaravelWubook\Api\WuBookAuth
      */
     protected $auth;
 

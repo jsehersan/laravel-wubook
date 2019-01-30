@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace IlGala\LaravelWubook\Api;
+namespace Jsehersan\LaravelWubook\Api;
 
-use IlGala\LaravelWubook\Api\WuBookApi;
+use Jsehersan\LaravelWubook\Api\WuBookApi;
 
 /**
  * Description of WuBookChannelManager
