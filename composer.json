@@ -33,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ilgala\\LaravelWubook\\": "src"
+            "Jsehersan\\LaravelWubook\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ilgala\\LaravelWubook\\": "tests"
+            "Jsehersan\\LaravelWubook\\": "tests"
         }
     },
     "scripts": {
