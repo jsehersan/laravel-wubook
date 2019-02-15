@@ -13,6 +13,7 @@ namespace Jsehersan\LaravelWubook\Api;
 
 use Jsehersan\LaravelWubook\Api\WuBookAuth;
 use Jsehersan\LaravelWubook\Exceptions\WuBookException;
+use Jsehersan\LaravelWubook\Events\RequestSendEvent;
 
 /**
  * This is the WuBook api abstract class.
@@ -132,7 +133,7 @@ abstract class WuBookApi
         try {
             // Retrieve response
             $response = $this->client->call($method, $data);
-
+			event(new RequestSendEvent($token));
             return [
                 'has_error' => $response[0] != 0,
                 'data' => $response[1]

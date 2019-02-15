@@ -216,6 +216,12 @@ class RoomManager
 App::make('RoomManager')->fetch_rooms(1);
 ```
 
+##### Event 
+
+Jsehersan\LaravelWubook\Events\RequestSendEvent  : this event is dispatched when request is made.
+
+
+
 For more information on how to use the `\LaravelWubook\WuBookManager` class we are calling behind the scenes here, check out the [Wired API doc](http://tdocs.wubook.net/wired.html).
 
 ##### Further Information

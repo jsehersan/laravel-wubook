@@ -13,8 +13,8 @@ namespace Jsehersan\LaravelWubook\Api;
 
 use fXmlRpc\Client;
 use fXmlRpc\Exception\AbstractTransportException;
-use Jsehersan\WuBook\Exceptions\WuBookException;
 use Carbon\Carbon;
+use Jsehersan\LaravelWubook\Exceptions\WuBookException;
 
 /**
  * This is the WuBook authentication class.

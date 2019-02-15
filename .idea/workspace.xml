@@ -106,8 +106,8 @@
       <file leaf-file-name="WuBookServiceProvider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WuBookServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+            <state relative-caret-position="465">
+              <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -185,17 +185,6 @@
               <item name="laravel-wubook" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-wubook" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="laravel-wubook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-wubook" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-wubook" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-wubook" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -229,12 +218,12 @@
       <option name="presentableId" value="Default" />
       <updated>1548868774282</updated>
       <workItem from="1548868776674" duration="724000" />
-      <workItem from="1548874175019" duration="44000" />
+      <workItem from="1548874175019" duration="830000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="768000" />
+    <option name="totallyTimeSpent" value="1554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="76" width="1936" height="1096" extended-state="6" />
@@ -507,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WuBookServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
+        <state relative-caret-position="465">
+          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding />
         </state>
       </provider>
