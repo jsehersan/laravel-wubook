@@ -91,7 +91,7 @@ abstract class WuBookApi
         }
 
         $response = $this->auth->is_token_valid($token, $this->config['cache_token']);
-
+        event(new RequestSendEvent($token));
         if (is_int($response)) {
             // If response is integer => valid token
             return $token;
