@@ -9,10 +9,12 @@ class RequestSendEvent
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $token;
+    public $method;
 
-    public function __construct($token)
+    public function __construct($token,$method)
     {
         $this->token = $token;
+        $this->method = $method;
     }
 
     /**

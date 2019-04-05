@@ -133,7 +133,7 @@ abstract class WuBookApi
         try {
             // Retrieve response
             $response = $this->client->call($method, $data);
-			event(new RequestSendEvent($token));
+			event(new RequestSendEvent($token,$method));
             return [
                 'has_error' => $response[0] != 0,
                 'data' => $response[1]
