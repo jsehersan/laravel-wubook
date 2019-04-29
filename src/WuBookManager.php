@@ -13,6 +13,7 @@ namespace Jsehersan\LaravelWubook;
 
 use fXmlRpc\Client;
 use fXmlRpc\Parser\NativeParser;
+use fXmlRpc\Parser\XmlReaderParser;
 use fXmlRpc\Serializer\NativeSerializer;
 use Illuminate\Contracts\Config\Repository;
 use Jsehersan\LaravelWubook\Exceptions\WuBookException;
@@ -95,7 +96,7 @@ class WuBookManager
     public function availability($token = null)
     {
         // Setup client
-        $client = new Client(self::ENDPOINT, null, new NativeParser(), new NativeSerializer());
+        $client = new Client(self::ENDPOINT, null,new XmlReaderParser(), new NativeSerializer());
 
         return new WuBookAvailability($this->config, $this->cache, $client, $token);
     }
