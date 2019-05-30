@@ -135,11 +135,12 @@ class WuBookReservations extends WuBookApi
      *
      * @param string $rcode
      * @param string $reason
+     * @param boolean $send_mail
      * @return mixed
      */
-    public function cancel_reservation($rcode, $reason = '')
+   public function cancel_reservation($rcode, $reason = '',$send_mail=0)
     {
-        return $this->call_method($this->token, 'cancel_reservation', [$rcode, $reason]);
+        return $this->call_method($this->token, 'cancel_reservation', [$rcode, $reason,$send_mail]);
     }
 
     /**
